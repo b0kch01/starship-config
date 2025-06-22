@@ -19,7 +19,7 @@ right_format = """$all"""
 disabled = true
 
 [directory]
-style = "bold fg:green"
+style = "bold"
 format = "[ $path ]($style)"
 
 
@@ -46,56 +46,12 @@ format = "at $output"
 [git_branch]
 symbol = "[](black) "
 # format =  ' [$symbol$branch(:$remote_branch)]($style)[]'
-style = "fg:1 bg:black"
+style = "fg:yellow bg:black"
 format =  '  on [$symbol$branch]($style)[](black)'
 
 [git_status]
+style = "fg:yellow"
 format = ' [($all_status$ahead_behind )]($style)'
-
-[nodejs]
-symbol = ""
-format = '[ $symbol( $version) ]($style)'
-
-[c]
-symbol = " "
-format = '[[ $symbol( $version) ]]($style)'
-
-[rust]
-symbol = ""
-format = '[[ $symbol( $version) ]]($style)'
-
-[golang]
-symbol = ""
-format = '[ $symbol( $version) ]($style)'
-detect_files = ["go.mod"]
-
-[php]
-symbol = ""
-format = '[[ $symbol( $version) ]]($style)'
-
-[java]
-symbol = " "
-format = '[[ $symbol( $version) ]]($style)'
-
-[kotlin]
-symbol = ""
-
-format = '[[ $symbol( $version) ]]($style)'
-
-[haskell]
-symbol = ""
-
-format = '[[ $symbol( $version) ]]($style)'
-
-[python]
-symbol = ""
-
-format = '[[ $symbol( $version) ]]($style)'
-
-
-[docker_context]
-symbol = ""
-format = '[ $symbol( $context) ]($style)'
 
 
 [time]
@@ -109,7 +65,3 @@ disabled = true
 
 [character]
 disabled = false
-vimcmd_symbol = '[](bold fg:creen)'
-vimcmd_replace_one_symbol = '[](bold fg:purple)'
-vimcmd_replace_symbol = '[](bold fg:purple)'
-vimcmd_visual_symbol = '[](bold fg:lavender)'
