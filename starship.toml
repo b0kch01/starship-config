@@ -19,7 +19,7 @@ right_format = """$all"""
 disabled = true
 
 [directory]
-style = "bold"
+style = "bold fg:green"
 format = "[ $path ]($style)"
 
 
